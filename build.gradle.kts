@@ -91,7 +91,7 @@ dependencies {
     "xjc40CompileOnly"("jakarta.xml.bind:jakarta.xml.bind-api:4.0.0")
 
     "testLibApi"(kotlin("stdlib-jdk8"))
-    "testLibApi"("com.willowtreeapps.assertk:assertk-jvm:0.22")
+    "testLibApi"("com.willowtreeapps.assertk:assertk-jvm:0.25")
 
     "testImplementation"("org.spekframework.spek2:spek-dsl-jvm:2.0.9")
     "testRuntimeOnly"("org.spekframework.spek2:spek-runner-junit5:2.0.15")
