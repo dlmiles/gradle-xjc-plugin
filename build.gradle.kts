@@ -82,7 +82,7 @@ dependencies {
     "xjc30CompileOnly"("com.sun.xml.bind:jaxb-xjc:3.0.2")
     "xjc30CompileOnly"("com.sun.xml.bind:jaxb-core:3.0.2")
     "xjc30CompileOnly"("com.sun.xml.bind:jaxb-impl:3.0.2")
-    "xjc30CompileOnly"("jakarta.xml.bind:jakarta.xml.bind-api:3.0.1")
+    "xjc30CompileOnly"("jakarta.xml.bind:jakarta.xml.bind-api:4.0.0")
 
     "xjc40CompileOnly"(xjcCommon.output)
     "xjc40CompileOnly"("com.sun.xml.bind:jaxb-xjc:4.0.2")
