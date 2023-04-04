@@ -57,19 +57,19 @@ dependencies {
 
     "xjc21CompileOnly"(xjcCommon.output)
     "xjc21CompileOnly"("com.sun.xml.bind:jaxb-xjc:2.1.17")
-    "xjc21CompileOnly"("com.sun.xml.bind:jaxb-core:2.1.14")
+    "xjc21CompileOnly"("com.sun.xml.bind:jaxb-core:4.0.2")
     "xjc21CompileOnly"("com.sun.xml.bind:jaxb-impl:2.1.17")
     "xjc21CompileOnly"("javax.xml.bind:jaxb-api:2.1")
 
     "xjc22CompileOnly"(xjcCommon.output)
     "xjc22CompileOnly"("com.sun.xml.bind:jaxb-xjc:2.2.11")
-    "xjc22CompileOnly"("com.sun.xml.bind:jaxb-core:2.2.11")
+    "xjc22CompileOnly"("com.sun.xml.bind:jaxb-core:4.0.2")
     "xjc22CompileOnly"("com.sun.xml.bind:jaxb-impl:2.2.11")
     "xjc22CompileOnly"("javax.xml.bind:jaxb-api:2.2.11")
 
     "xjc23CompileOnly"(xjcCommon.output)
     "xjc23CompileOnly"("com.sun.xml.bind:jaxb-xjc:2.3.8")
-    "xjc23CompileOnly"("com.sun.xml.bind:jaxb-core:2.3.0.1")
+    "xjc23CompileOnly"("com.sun.xml.bind:jaxb-core:4.0.2")
     "xjc23CompileOnly"("com.sun.xml.bind:jaxb-impl:2.3.8")
     "xjc23CompileOnly"("javax.xml.bind:jaxb-api:2.3.1")
 
@@ -80,7 +80,7 @@ dependencies {
 
     "xjc30CompileOnly"(xjcCommon.output)
     "xjc30CompileOnly"("com.sun.xml.bind:jaxb-xjc:3.0.2")
-    "xjc30CompileOnly"("com.sun.xml.bind:jaxb-core:3.0.2")
+    "xjc30CompileOnly"("com.sun.xml.bind:jaxb-core:4.0.2")
     "xjc30CompileOnly"("com.sun.xml.bind:jaxb-impl:3.0.2")
     "xjc30CompileOnly"("jakarta.xml.bind:jakarta.xml.bind-api:3.0.1")
 
