@@ -5,7 +5,7 @@ plugins {
     id("org.unbroken-dome.test-sets") version "4.0.0"
     id("com.gradle.plugin-publish") version "0.21.0"
     id("org.asciidoctor.convert") version "2.4.0"
-    id("org.jetbrains.dokka") version "0.10.1"
+    id("org.jetbrains.dokka") version "1.8.20"
 }
 
 
