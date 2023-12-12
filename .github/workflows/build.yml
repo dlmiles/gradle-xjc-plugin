@@ -65,23 +65,23 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Gradle - build
-        run: ./gradlew build
+        run: ./gradlew $GRADLE_EXTRA_ARGS build
 
       - name: Gradle - check
-        run: ./gradlew check
+        run: ./gradlew $GRADLE_EXTRA_ARGS check
 
       - name: Gradle - integrationTest
         if: ${{ vars.GRADLE_TARGET_ENABLE_integrationTest == 'true' || inputs.GRADLE_TARGET_ENABLE_integrationTest }}
-        run: ./gradlew integrationTest
+        run: ./gradlew $GRADLE_EXTRA_ARGS integrationTest
 
       - name: Gradle - asciidoctor
-        run: ./gradlew asciidoctor
+        run: ./gradlew $GRADLE_EXTRA_ARGS asciidoctor
 
       - name: Gradle - dokka
-        run: ./gradlew dokka
+        run: ./gradlew $GRADLE_EXTRA_ARGS dokka
 
       - name: Gradle - publish
-        run: ./gradlew publish
+        run: ./gradlew $GRADLE_EXTRA_ARGS publish
 
       - name: Upload - prepare
         if: ${{ matrix.os == 'ubuntu-latest' }}
@@ -129,6 +129,8 @@ jobs:
     needs: build
 
     runs-on: ubuntu-latest
+    env:
+      GRADLE_EXTRA_ARGS: --no-daemon
     steps:
       - name: Checkout
         uses: actions/checkout@v3
