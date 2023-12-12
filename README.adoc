@@ -103,7 +103,7 @@ endif::[]
 .build.gradle(.kts)
 ----
 plugins {
-    id("org.unbroken-dome.xjc") version "2.1.0-SNAPSHOT"
+    id("org.unbroken-dome.xjc") version "2.2.0-SNAPSHOT"
 }
 
 dependencies {
