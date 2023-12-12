@@ -11,6 +11,26 @@ pluginManagement {
         if (requested.id.id == "org.unbroken-dome.test-sets") {
             useVersion(testSetsVersion)
         }
+        if (requested.id.id == "org.darrylmiles.repack.org.unbroken-dome.test-sets") {
+            useVersion(testSetsVersion)
+        }
+    }
+
+    repositories {
+        gradlePluginPortal()
+        maven {
+            url = uri("https://maven.pkg.github.com/dlmiles/gradle-testsets-plugin")
+            content {
+                // this repository only contains artifacts for specific groups
+                includeGroup("org.darrylmiles.repack.org.unbroken-dome.test-sets")
+                includeGroup("org.darrylmiles.repack.org.unbroken-dome")
+            }
+            credentials {
+                username = System.getenv("GITHUB_USERNAME")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+        mavenCentral()
     }
 }
 
