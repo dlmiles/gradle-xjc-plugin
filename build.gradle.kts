@@ -103,7 +103,7 @@ dependencies {
     "testLibApi"(kotlin("stdlib-jdk8"))
     "testLibApi"("com.willowtreeapps.assertk:assertk-jvm:0.22")
 
-    "testImplementation"("org.spekframework.spek2:spek-dsl-jvm:2.0.9")
+    "testImplementation"("org.spekframework.spek2:spek-dsl-jvm:2.0.19")
     "testRuntimeOnly"("org.spekframework.spek2:spek-runner-junit5:2.0.15")
 
     "integrationTestImplementation"(gradleTestKit())
