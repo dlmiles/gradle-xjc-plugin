@@ -102,7 +102,7 @@ dependencies {
 
     "testLibApi"(kotlin("stdlib-jdk8"))
     // Bumping past 0.22 forces kotlin 1.4.x (Gradle 7+)
-    "testLibApi"("com.willowtreeapps.assertk:assertk-jvm:0.22")
+    "testLibApi"("com.willowtreeapps.assertk:assertk-jvm:0.28.0")
 
     // Bumping these past 2.0.15 forces Gradle 7.x use for newer kotlin
     "testImplementation"("org.spekframework.spek2:spek-dsl-jvm:2.0.15")
