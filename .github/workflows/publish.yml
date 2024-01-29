@@ -157,7 +157,7 @@ jobs:
       uses: gradle/wrapper-validation-action@v1
 
     - name: Gradle - setup
-      uses: gradle/gradle-build-action@v2
+      uses: gradle/gradle-build-action@v3
 
     - name: Gradle - assemble
       env: # to resolve artifacts from GH packages
