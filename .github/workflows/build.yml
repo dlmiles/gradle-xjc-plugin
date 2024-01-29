@@ -55,7 +55,7 @@ jobs:
           java-version: ${{ matrix.jvm }}
 
       - name: Gradle - wrapper-validation-action
-        uses: gradle/wrapper-validation-action@v1
+        uses: gradle/wrapper-validation-action@v2
 
       - name: Gradle - setup
         uses: gradle/gradle-build-action@v2
