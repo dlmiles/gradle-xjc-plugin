@@ -199,7 +199,7 @@ jobs:
         uses: gradle/wrapper-validation-action@v2
 
       - name: Gradle - setup
-        uses: gradle/gradle-build-action@v2
+        uses: gradle/gradle-build-action@v3
 
       - name: Show Diff
         run: |
