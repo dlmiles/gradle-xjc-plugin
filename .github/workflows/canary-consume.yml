@@ -73,7 +73,7 @@ jobs:
         uses: gradle/wrapper-validation-action@v2
 
       - name: Gradle - setup
-        uses: gradle/gradle-build-action@v3
+        uses: gradle/actions/setup-gradle@v3
 
       - name: Report Versions
         run: |
@@ -391,7 +391,7 @@ jobs:
         uses: gradle/wrapper-validation-action@v2
 
       - name: Gradle - setup
-        uses: gradle/gradle-build-action@v3
+        uses: gradle/actions/setup-gradle@v3
 
       - name: Show Diff
         run: |
