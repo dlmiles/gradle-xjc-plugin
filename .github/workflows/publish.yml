@@ -154,7 +154,7 @@ jobs:
         java-version: ${{ env.JAVA_VERSION }}
 
     - name: Gradle - wrapper-validation-action
-      uses: gradle/wrapper-validation-action@v2
+      uses: gradle/wrapper-validation-action@v3
 
     - name: Gradle - setup
       uses: gradle/actions/setup-gradle@v3
