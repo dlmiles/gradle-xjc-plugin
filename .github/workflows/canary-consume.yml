@@ -70,7 +70,7 @@ jobs:
           java-version: ${{ env.GHA_INPUT_BUILD_JVM }}
 
       - name: Gradle - wrapper-validation-action
-        uses: gradle/wrapper-validation-action@v2
+        uses: gradle/wrapper-validation-action@v3
 
       - name: Gradle - setup
         uses: gradle/actions/setup-gradle@v3
@@ -388,7 +388,7 @@ jobs:
           java-version: ${{ matrix.jvm }}
 
       - name: Gradle - wrapper-validation-action
-        uses: gradle/wrapper-validation-action@v2
+        uses: gradle/wrapper-validation-action@v3
 
       - name: Gradle - setup
         uses: gradle/actions/setup-gradle@v3
