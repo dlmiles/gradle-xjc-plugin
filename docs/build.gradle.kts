@@ -4,7 +4,7 @@ import org.asciidoctor.gradle.AsciidoctorTask
 plugins {
     kotlin("jvm")
     id("org.asciidoctor.convert") version "2.4.0"
-    id("org.jetbrains.dokka") version "0.10.1"
+    id("org.jetbrains.dokka") version "1.9.20"
 }
 
 val kotlinVersion: String by extra
