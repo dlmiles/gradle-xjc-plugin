@@ -3,7 +3,7 @@
 XJC supports processing schemas from remote locations, in addition to schemas stored in the
 local file system.
 
-To use such remote schemas with the `org.unbroken-dome.xjc` Gradle plugin, add a text file
+To use such remote schemas with the `{plugin-id}` Gradle plugin, add a text file
 with the extension `.url` into your `src/main/schema` directory. The `.url` file should list
 one remote schema URL per line.
 

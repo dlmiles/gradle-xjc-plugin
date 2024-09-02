@@ -8,7 +8,7 @@ default, and can easily be extended with additional, custom source sets in a Gra
 
 == Support for Multiple Source Sets
 
-The `org.unbroken-dome.xjc` plugin adds XJC functionality for _each_ source set in the project, both for existing
+The `{plugin-id}` plugin adds XJC functionality for _each_ source set in the project, both for existing
 source sets and source sets that are added after the plugin is applied.
 
 For each source set there will be a task of type `XjcGenerate` that will do the actual work of invoking XJC for

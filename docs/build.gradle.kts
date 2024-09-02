@@ -72,6 +72,7 @@ tasks.named("asciidoctor", org.asciidoctor.gradle.AsciidoctorTask::class) {
         "github-pages-uri" to "https://${githubRepositoryOwner}.github.io/gradle-xjc-plugin",
         "github-uri" to "https://github.com/${githubRepositoryOwner}/gradle-xjc-plugin",
         "project-version" to project.version,
+        "plugin-id" to project.properties["pluginIdForDocs"].toString(),
         "current-release-version" to project.properties["versionForDocs"].toString(),
         "source-highlighter" to "prettify"
     ))
