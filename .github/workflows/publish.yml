@@ -176,11 +176,11 @@ jobs:
 
     - name: Gradle - asciidoctor
       run: |
-        ./gradlew $GRADLE_EXTRA_ARGS asciidoctor
+        ./gradlew $GRADLE_EXTRA_ARGS asciidoctor && find docs/build/docs/asciidoc
 
     - name: Gradle - dokka
       run: |
-        ./gradlew $GRADLE_EXTRA_ARGS dokka
+        ./gradlew $GRADLE_EXTRA_ARGS dokka && find docs/build/dokka
 
     - name: Gradle - publish local
       run: |

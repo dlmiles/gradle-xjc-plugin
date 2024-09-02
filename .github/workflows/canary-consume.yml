@@ -120,10 +120,10 @@ jobs:
         run: ./gradlew $GRADLE_EXTRA_ARGS "-Dorg.unbrokendome.gradle.plugins.xjc.testutil.GradleVersions=${GRADLE_VERSION}" integrationTest
 
       - name: Gradle - asciidoctor
-        run: ./gradlew $GRADLE_EXTRA_ARGS asciidoctor
+        run: ./gradlew $GRADLE_EXTRA_ARGS asciidoctor && find docs/build/docs/asciidoc
 
       - name: Gradle - dokka
-        run: ./gradlew $GRADLE_EXTRA_ARGS dokka
+        run: ./gradlew $GRADLE_EXTRA_ARGS dokka && find docs/build/dokka
 
       - name: Gradle - publish
         run: ./gradlew $GRADLE_EXTRA_ARGS publish
@@ -154,8 +154,8 @@ jobs:
 
           docs_build_dir="build"
           [ -d docs/build ] && docs_build_dir="docs/build" || true
-          [ -d $docs_build_dir/asciidoc/html5 ] && cp -a $docs_build_dir/asciidoc/html5/* build/gh-pages/
-          [ -d $docs_build_dir/dokka          ] && cp -a $docs_build_dir/dokka            build/gh-pages/
+          [ -d $docs_build_dir/docs/asciidoc ] && cp -a $docs_build_dir/docs/asciidoc/* build/gh-pages/
+          [ -d $docs_build_dir/dokka         ] && cp -a $docs_build_dir/dokka           build/gh-pages/
 
           mkdir -p build/gh-pages/maven2
           [ -d "build/repo" ] && cp -a build/repo/* build/gh-pages/maven2/
@@ -466,8 +466,8 @@ jobs:
 
           docs_build_dir="build"
           [ -d docs/build ] && docs_build_dir="docs/build" || true
-          [ -d $docs_build_dir/asciidoc/html5 ] && cp -a $docs_build_dir/asciidoc/html5/* build/gh-pages/
-          [ -d $docs_build_dir/dokka          ] && cp -a $docs_build_dir/dokka            build/gh-pages/
+          [ -d $docs_build_dir/docs/asciidoc ] && cp -a $docs_build_dir/docs/asciidoc/* build/gh-pages/
+          [ -d $docs_build_dir/dokka         ] && cp -a $docs_build_dir/dokka           build/gh-pages/
 
           mkdir -p build/gh-pages/maven2
           [ -d "build/repo" ] && cp -a build/repo/* build/gh-pages/maven2/

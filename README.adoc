@@ -130,7 +130,7 @@ it the `main` Java compilation.
 == Further Documentation
 
 * {github-pages-uri}/[User Manual]
-* {github-pages-uri}/dokka/gradle-xjc-plugin/[API/DSL Documentation]
+* {github-pages-uri}/dokka/docs/[API/DSL Documentation]
 * {github-m2-uri}/[Github Maven2 Package Browse]
 * {github-pages-uri}/java8/maven2/[Github-Pages Maven2 Artifact Browse]
 * {github-pages-uri}/artifacts/[Maven2 Artifact Archive Download]
