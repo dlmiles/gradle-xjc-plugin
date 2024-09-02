@@ -1,9 +1,9 @@
 import org.jetbrains.dokka.gradle.DokkaTask
-import org.asciidoctor.gradle.AsciidoctorTask
+import org.asciidoctor.gradle.jvm.AsciidoctorTask
 
 plugins {
     kotlin("jvm")
-    id("org.asciidoctor.convert") version "2.4.0"
+    id("org.asciidoctor.jvm.convert") version "2.4.0"
     id("org.jetbrains.dokka") version "0.10.1"
 }
 
@@ -50,18 +50,18 @@ tasks.named("dokka", org.jetbrains.dokka.gradle.DokkaTask::class) {
 }
 
 
-asciidoctorj {
-    version = "2.4.1"
-}
-
 dependencies {
-    "asciidoctor"("com.bmuschko:asciidoctorj-tabbed-code-extension:0.3")
+    runtimeOnly("com.bmuschko:asciidoctorj-tabbed-code-extension:0.3")
 }
 
 
-tasks.named("asciidoctor", org.asciidoctor.gradle.AsciidoctorTask::class) {
-//tasks.withType<org.asciidoctor.gradle.AsciidoctorTask>().configureEach {
-    sourceDir(".")
+tasks.named("asciidoctor", org.asciidoctor.gradle.jvm.AsciidoctorTask::class) {
+//tasks.withType<org.asciidoctor.gradle.jvm.AsciidoctorTask>().configureEach {
+    asciidoctorj {
+        setVersion("2.4.1")
+    }
+
+    setSourceDir(file("."))
     sources(delegateClosureOf<PatternSet> { include("index.adoc") })
 
     options(mapOf(
