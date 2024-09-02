@@ -1,5 +1,5 @@
 = Gradle XJC Plugin
-:revnumber: {project-version}
+:revnumber: {current-release-version}
 :doctype: book
 :toc: left
 :icons: font

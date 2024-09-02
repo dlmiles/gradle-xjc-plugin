@@ -6,7 +6,7 @@ Apply the `org.unbroken-dome.xjc` plugin to your Gradle project:
 .Groovy
 ----
 plugins {
-    id 'org.unbroken-dome.xjc' version '{project-version}'
+    id 'org.unbroken-dome.xjc' version '{current-release-version}'
 }
 ----
 
@@ -14,7 +14,7 @@ plugins {
 .Kotlin
 ----
 plugins {
-    id("org.unbroken-dome.xjc") version "{project-version}"
+    id("org.unbroken-dome.xjc") version "{current-release-version}"
 }
 ----
 
