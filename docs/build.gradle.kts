@@ -3,7 +3,8 @@ import org.asciidoctor.gradle.jvm.AsciidoctorTask
 
 plugins {
     kotlin("jvm")
-    id("org.asciidoctor.jvm.convert") version "2.4.0"
+    // going to 4.0.0+ forces JDK11+ for doc production
+    id("org.asciidoctor.jvm.convert") version "3.3.2"
     id("org.jetbrains.dokka") version "0.10.1"
 }
 
@@ -58,7 +59,8 @@ dependencies {
 tasks.named("asciidoctor", org.asciidoctor.gradle.jvm.AsciidoctorTask::class) {
 //tasks.withType<org.asciidoctor.gradle.jvm.AsciidoctorTask>().configureEach {
     asciidoctorj {
-        setVersion("2.4.1")
+        // going to 3.0.0+ forces JDK11+ for doc production
+        setVersion("2.5.13")
     }
 
     setSourceDir(file("."))
