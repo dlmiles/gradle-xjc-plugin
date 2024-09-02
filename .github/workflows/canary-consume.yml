@@ -197,6 +197,7 @@ jobs:
         gradle: [
           'latest',
           '8',
+          '8.7',  # BuildOperationExecutor#start() removal in 8.8
           '8.5',   # JDK21
           '7',
           '7.6',
