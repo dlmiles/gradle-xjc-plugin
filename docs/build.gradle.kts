@@ -30,6 +30,11 @@ tasks.named("dokka", org.jetbrains.dokka.gradle.DokkaTask::class) {
     configuration {
         externalDocumentationLink {
             url = uri("https://docs.gradle.org/current/javadoc/").toURL()
+            // Gradle before 8.8 has package-list
+            // Gradle since 8.8 has element-list
+            // The upstream Gradle docs for "current" are not being published using JDK11 javadoc which changes the
+            // URL filename from "package-list" to "element-list" since this is an external resource
+            packageListUrl = uri("https://docs.gradle.org/current/javadoc/element-list").toURL()
         }
         reportUndocumented = false
         sourceLink {
