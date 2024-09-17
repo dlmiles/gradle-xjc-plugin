@@ -3,7 +3,7 @@ plugins {
     `java-gradle-plugin`
     `maven-publish`
     id("org.darrylmiles.repack.org.unbroken-dome.test-sets") // version "$testSetsVersion"
-    id("com.gradle.plugin-publish") version "0.21.0"
+    id("com.gradle.plugin-publish") version "1.3.0"
 }
 
 
