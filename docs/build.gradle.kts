@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm")
     // going to 4.0.0+ forces JDK11+ for doc production
     id("org.asciidoctor.jvm.convert") version "3.3.2"
-    id("org.jetbrains.dokka") version "0.10.1"
+    id("org.jetbrains.dokka") version "2.0.0"
 }
 
 val kotlinVersion: String by extra
